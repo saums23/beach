@@ -1,0 +1,47 @@
+*{box-sizing: border-box;}
+
+body{margin: 0px;font-family: "Helvetica Neue", Helvetica;}
+
+.section1{
+	display:flex; 
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items: center;
+	background-image: url('https://fthmb.tqn.com/ZMvIPfXbxQb4IgZo_wLrg8SB52o=/2016x1344/filters:fill(auto,1)/Reduit-Beach-59e0f6e6d963ac001132e95d.jpg');
+	height: 800px;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+
+.sectionTxt{
+	text-align: center;
+}
+
+.title{color: black; font-size: 50px;font-weight: 600;line-height: 40px;}
+.subtitle{color: black; font-size: 20px;}
+.moreBtn{border-radius: 10px;border: 2px solid black;color:black;font-size:20px;text-decoration:none;padding:10px;}
+
+.section2{background-color:#80bfff;color: white; padding: 20px; text-align: justify; font-size: 17px; line-height: 25px;}
+
+.section3{background-color:#F4F4F4;color: #004d00; padding: 20px; text-align: justify; font-size: 17px; line-height: 25px;}
+
+.section4{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.part1,.part2,.part3{flex: 0 1 33%;padding: 20px; text-align:justify; font-size: 17px; line-height: 25px;}
+
+.part1,.part3{background-color: #cc3300;color: white;}
+.part2{background-color:#F4F4F4;color:  #004d00;}
+
+@media screen and (max-width: 800px) 
+{
+  .section4 
+  {
+    flex-direction: column;
+  }
+} 
